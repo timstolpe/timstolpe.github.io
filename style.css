@@ -15,7 +15,7 @@ body {
 }
 
 section{
-    margin-top: 10rem;
+    margin-top: 8rem;
 }
 
 div{
@@ -46,10 +46,10 @@ p{
     width: clamp(30rem, 80%, 100rem);
 }
 
-/* .nav{
+.nav{
     padding-top: 1rem;
     padding-bottom: 2rem;
-} */
+}
 
 .container{
     width: clamp(50rem, 80vw, 125rem); /* Gör responsiv, media query alt. clamp */
@@ -78,7 +78,7 @@ p{
 }
 .nav__heading {
     margin-top: 3.0rem;
-    margin-left: 6rem;
+    margin-left: 2rem;
 }
 .nav__heading-link{
     text-decoration: none;
@@ -86,6 +86,7 @@ p{
 .nav__link--current, .nav__link:hover{
     box-shadow: inset 0 -0.15rem var(--color-3);
 }
+
 
 .heading-decoration{
     color: var(--color-3);
