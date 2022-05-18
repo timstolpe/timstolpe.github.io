@@ -1,57 +1,96 @@
+:root {
+    --color-1: hsl(240, 68%, 6%);
+    --color-2: hsl(157, 30%, 52%);
+    --color-3: hsl(269, 95%, 55%);
+    --color-4: hsl(269, 95%, 45%);
+}
+
 html{
     font-size: 10px;
 }
 
 body {
-    background-color: rgb(11, 11, 46);
+    margin: 0 auto;
+    background-color: var(--color-1);
 }
 
-h2{
-    font-size: 2.5rem;
+section{
+    margin-top: 10rem;
 }
 
-a{
-    font-size: 1.4rem;
-    text-decoration: none;
-    display: block;
+div{
+    margin-left: 2rem;
 }
 
-p{
-    font-size: 1.2rem;
-}
-
-h2, a, p {
-    color: rgb(109, 158, 139);
+h1, h2, a, p {
+    color: var(--color-2);
     font-family: monospace;
 }
 
+h1{
+    color: var(--color-2);
+    margin-left: 2rem;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+
+
+p{
+    font-size: 1.4rem;
+    width: clamp(30rem, 80%, 100rem);
+}
+
+/* .nav{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+} */
+
 .container{
-    max-width: 100rem; /* Gör responsiv, media query alt. clamp */
+    width: clamp(50rem, 80vw, 125rem); /* Gör responsiv, media query alt. clamp */
     margin: 0 auto;
 }
 
+
 .nav__links {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     list-style: none;
 }
 .nav__group {
     display: flex;
-    padding-top: 0.8rem;
+    padding-top: 2.2rem;
     padding-right: 5.0rem;
 }
 .nav__link {
     display: block;
+    padding-left: 0.4rem;
     font-size: 2.5rem;
     letter-spacing: 0.15rem;
     margin: 1rem 2rem;
     text-decoration: none;
-    max-height: 5.3rem;
 }
 .nav__heading {
+    margin-top: 3.0rem;
     margin-left: 6rem;
 }
-/* .nav__link--current{
-    font-weight: bold;
-} */
+.nav__heading-link{
+    text-decoration: none;
+}
+.nav__link--current, .nav__link:hover{
+    box-shadow: inset 0 -0.15rem var(--color-3);
+}
+
+.heading-decoration{
+    color: var(--color-3);
+}
+
+.text--indented{
+    padding-left: 4rem;
+}
