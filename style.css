@@ -5,6 +5,24 @@
     --color-4: hsl(269, 95%, 45%);
 }
 
+::-webkit-scrollbar {
+    width: 1.2rem;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: var(--color-1);
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color-4);
+}
+  
+/* ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} */
+
 html{
     font-size: 10px;
 }
@@ -94,4 +112,14 @@ p{
 
 .text--indented{
     padding-left: 4rem;
+}
+
+.header__title{
+    margin-left: 2rem;
+}
+
+.content__image{
+    margin-top: 1rem;
+    max-width: 40%;
+    max-height: auto;
 }
